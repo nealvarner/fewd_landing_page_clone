@@ -75,6 +75,7 @@ div {
 
 .top-navigation .links {
     float: right;
+    box-sizing: border-box;
 }
 
 .top-navigation .links li {
