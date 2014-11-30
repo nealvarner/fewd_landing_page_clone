@@ -1,4 +1,4 @@
- http://meyerweb.com/eric/tools/css/reset/ 
+ /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22,20 +22,15 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-body, a {
+body {
     line-height: 1;
-    /*Typography Declarations*/
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    color: #838994;
-    letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
 ol, ul {
@@ -53,6 +48,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /* DEBUG */
 body {
     background-color: LightGray;
@@ -67,16 +63,30 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+body, a {
+    /*Typography Declarations*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #838994;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
 /* Navigation Section */
+.content {
+    padding: 0 20em;
+}
+
 .top-navigation {
     background-color: #fff;
+    width: 100%;
+    min-width: 95em;
 }
 
 .top-navigation > .content {
-    padding: 0em 20em;
     height: 70px;
-    /*width: 50em;*/
+    /*width: 100em;*/
     margin: 0 auto;
+    min-width: 95em;
 }
 
 .top-navigation .logo {
@@ -85,8 +95,8 @@ html {
 }
 
 .top-navigation .links {
+    margin-top: 1em;
     float: right;
-    box-sizing: border-box;
 }
 
 .top-navigation .links li {
