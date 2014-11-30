@@ -62,13 +62,23 @@ div {
 }
 
 .top-navigation > .content {
+    padding: 0em 20em;
     height: 70px;
-    width: 100%;
+    /*width: 50em;*/
     margin: 0 auto;
 }
 
-.logo {
-    margin-left: 20em;
+.top-navigation .logo {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.top-navigation .links {
+    float: right;
+}
+
+.top-navigation .links li {
+    display: inline-block;
+    padding-left: 2em;
+    padding-top: .75em;
 }
