@@ -50,13 +50,13 @@ table {
 }
 
 /* DEBUG */
-body {
+/*body {
     background-color: LightGray;
 }
 
 div {
     border: 1px solid Chocolate;
-}
+}*/
 
 /* Font Smoothing */
 html {
@@ -82,6 +82,8 @@ body, a {
     background-color: #fff;
     width: 100%;
     min-width: 95em;
+    position: fixed;
+    z-index: 9999;
 }
 
 .top-navigation > .content {
@@ -161,4 +163,34 @@ body, a {
     background-color: #d9400e;
     border-color: #cf3d0e;
     cursor: pointer;
+}
+
+.cases {
+    background-color: white;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 5em;
+}
+
+.cases h2 {
+    color: black;
+    font-size: 2.75rem;
+    font-weight: 100;
+}
+
+.cases .devices {
+    display: inline-block;
+    padding-top: 2rem;
+}
+
+.cases .devices .caption {
+    color: black;
+    font-size: 1.6rem;
+    min-width: 18rem;
+    margin: 2.75rem 0 1.5rem;
+}
+
+.cases .devices > li {
+    width: 33.333333%;
+    float: left;
 }
