@@ -84,6 +84,7 @@ body, a {
     min-width: 95em;
     position: fixed;
     z-index: 9999;
+    border-bottom: 1px solid LightGray;
 }
 
 .top-navigation > .content {
@@ -193,4 +194,50 @@ body, a {
 .cases .devices > li {
     width: 33.333333%;
     float: left;
+}
+
+/*footer*/
+
+.social {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.social h5 {
+    color: black;
+    text-align: center;
+}
+
+.social hr {
+    border: 0;
+    border-top: 1px solid LightGray;
+    margin: 1.3rem 0;
+}
+
+.social .icons {
+    display: inline-block;
+}
+
+.social .icons li {
+    border: 1px solid LightGray;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.5rem;
+    color: black;
+    text-align: center;
+    padding: 0.625rem 0;
+    float: left;
+    margin: 1.25rem 5px;
+}
+
+.social .icons .twitter {
+    color: #55acee;
+}
+
+.social .icons .facebook {
+    color: #4c66a4;
+}
+
+.social .icons .instagram {
+    color: #3f729b;
 }
